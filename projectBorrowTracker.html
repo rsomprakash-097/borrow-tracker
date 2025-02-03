@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrow Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Borrow Tracker</h1>
+
+        <div class="input-area">
+            <input type="text" id="item" placeholder="Item (e.g., Money, Rice)">
+            <input type="number" id="amount" placeholder="Amount">
+            <input type="text" id="borrower" placeholder="Borrower Name">
+            <input type="datetime-local" id="dueDate" >
+
+            <button onclick="addItem()">Add Item</button>
+        </div>
+
+        <div class="item-list">
+            <h2>Borrowed Items</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Amount</th>
+                        <th>Borrower</th>
+                        <th>Due Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
